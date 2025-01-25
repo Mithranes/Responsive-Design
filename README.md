@@ -14,7 +14,3 @@ If the globe is clicked and dragged, the globe rotates in the direction of the d
 Along with this functionality, each dot independently extrudes off the globe creating a scattered effect.
 This is achieved by shaders.
 
-To view, checkout: <a href="https://hydeit.co/globe/" target="_blank">https://hydeit.co/globe/</a>
-
-![alt text](https://github.com/jessehhydee/threejs-globe/blob/main/img/app_screen_shot.png?raw=true)
-
