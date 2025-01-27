@@ -1,5 +1,12 @@
 /* Remove default margins and padding from html and body */
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter_18pt-Regular.ttf);
+}
 
+* {
+  font-family: Inter;
+}
 
 /* Full viewport height and width with a linear gradient background */
 .container {
@@ -35,28 +42,56 @@
 #global-title-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 10%; /* Ensure content doesn't overlap with the globe */
   margin-right: 5%; /* Optional padding */
   flex-grow: 1;
-  position: relative;
   z-index: 1;
   padding: 20px; /* Optional padding to adjust the content */
+}
+
+#global-scale{
+  font-size: 17px;
+  color: #00D4FF;
+}
+
+#global-backbone{
+  color: white;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+#global-content {
+  color: #ADBDCC;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 /* Stats section styling */
 #global-statistics {
   display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  width: 70%;
+  width: 100%;
   z-index: 3;
- 
 }
 
 #global-statistics h3 {
   color: #FFFFFF;
+  font-size: 24px;
+  line-height: 32px;
+  
+  
 }
 
 #global-statistics p {
   color: #ADBDCC;
+  line-height: 24px;
 }
+
+.vl {
+  border-left: 1px solid #00D4FF;
+  height: 25px;
+  margin: 25px;
+  margin-left: 110px;
+}
+
+

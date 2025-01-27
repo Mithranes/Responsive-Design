@@ -85,7 +85,7 @@ const setScene = () => {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
   const pointLight = new THREE.PointLight(0x081b26, 20, 500);
-  pointLight.position.set(100, 0, 60);
+  pointLight.position.set(200, 0, 60);
   scene.add(pointLight);
   scene.add(new THREE.HemisphereLight(0xffffbb, 0x080820, 1.5));
 
@@ -385,5 +385,8 @@ const render = () => {
   requestAnimationFrame(render.bind(this))
 
 }
+
+
+
 
 setScene();
