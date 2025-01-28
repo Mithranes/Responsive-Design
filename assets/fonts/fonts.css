@@ -1,16 +1,7 @@
-/* Any fonts we are using goes here
-
-/* for example
-
-/* @font-face for a custom font */
-
-/* @font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/MyCustomFont.woff2') format('woff2'),
-         url('fonts/MyCustomFont.woff') format('woff');
-  }
-  
-  body {
-    font-family: 'MyCustomFont', sans-serif;
-  } */
-  
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/1a930247.woff2') format('woff2'),
+        url('./fonts/MyFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

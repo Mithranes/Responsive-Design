@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: '1a930247.woff2', sans-serif;
+}
+/* Main header styling */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    /* height: 62px;
+    width: 89px; */
+    padding: 10px 20px;
+    list-style: none;
+    align-content: center;
+}
+
+header{
+    width: clamp(300px, 100vw, 1080px);
+    padding: 0 16px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 1;
+} 
+
+h1 {
+    align-content: center;
+}
+
+.navigation {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cta-links {
+    padding-top: 20px;
+    height: 38px;
+    align-content: center;
+}
+
+.cta-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.cta-links a:last-child{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    color: orange;
+    padding: 8px 25px;
+}
+
+/* Intro section styling */
+#gradient-canvas{
+    --gradientColorZero: #a960ee;
+    --gradientColorOne: #ff333d;
+    --gradientColorTwo: #90e0ff;
+    --gradientColorThree: #ffcb57;
+    --gradientColorZeroTransparent: rgba(169, 96, 238, 0);
+    --gradientColorOneTransparent: rgba(255, 51, 61, 0);
+    --gradientColorTwoTransparent: rgba(144, 224, 255, 0);
+    --gradientColorThreeTransparent: rgba(255, 203, 87, 0);
+    clip-path: polygon(100% 0, 100% 30%, 0 80%, 0 0);
+    position: absolute;
+    top: 0px;
+}
+
+.intro-section{
+    overflow-x: hidden;
+}
+.content-wrapper {
+    width: clamp(300px, 100vw, 1080px);
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 128px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-caption{
+    width: 540px;
+    margin-top: 98px;
+    padding: 0 16px;
+}
+
+.intro-caption h2 {
+    font-size: 83px;
+    margin-bottom: 32px;
+    z-index: 2;
+    color: #3a3a3a;
+    width: 600px;
+    mix-blend-mode: color-burn;
+    opacity: 1;
+}
+
+.intro-caption p {
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #425466;
+}
+
+.intro-caption button {
+    height: 33px;
+    width: 111px;
+    border: none;
+
+}
+
+.btn-start {
+    background-color: #0A2540;
+    color: white;
+    border-radius: 25px;
+    margin-right: 16px;
+}
+
+.btn-contact-sales {
+    background-color: white;
+}
+
+/* Main article of payment form and graphs panel */
+.finance-dashboard{
+    width: 540px;
+    height: 595px;
+    position: relative;
+    z-index: 2;
+}
+
+.brands {
+    width: clamp(300px, 100vw, 1080px);
+    height: auto; 
+    margin: auto;
+    --gridRowGap: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-items: center;
+    align-items: center;
+    row-gap: var(--gridRowGap);
+}
