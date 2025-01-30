@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     background-color: #0A2540;
-    
+    font-family: Inter;
 }
 
 #container {
@@ -17,6 +17,8 @@
     width: 90%;
     
 }
+
+
 
 #developer-title-container {
     display: flex;
@@ -50,30 +52,236 @@
     border-radius: 16.5px;
     width: 144px;
     color: #0A2540;
+    outline: none;
+    cursor: pointer;
 }
 
 #code-snippet {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    
 }
 
 #developer-footer {
     display: flex;
     align-items: center;
-    justify-content: space-around
-
+    justify-content: center;
     
 }
 
 
-.dev-headers {
-    display: flex;
-    flex-direction: column;
+.dev-headers{
+    color: white;
+    margin-top: 50px;
+    margin-right: 70px
 };
 
+.dev-headers h3{
+    font-size: 13.71px;
+    line-height: 24px;
+}
+
+.dev-headers p {
+    color: #ADBDCC;
+    font-size: 13.59px;
+    line-height: 24px;
+    
+}
+
+.dev-headers button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #00D4FF;
+    
+}
 
 
+
+
+.vl {
+    border-left: 1px solid #00D4FF;
+    height: 15px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    
+    
+  }
+
+  .arrow {
+    border: solid #00D4FF;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+
+  .arrow-button {
+    border: solid #0A2540;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  
+  
+  .Container {
+    width: 500px;
+    border-radius: 6px;
+    position: relative;
+    background: #282B36;
+    margin: 60px auto 0 auto;
+    box-shadow: 0 10px 40px 0 rgba(40,43,54,0.30);
+    
+    nav {
+      top: 15px;
+      left: 15px;
+      position: absolute;
+      
+      a {
+        z-index: 2;
+        color: #A5AAAF;
+        font-size: 13px;
+        padding: 5px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        text-decoration: none;
+        &:hover, &.active { color: white; }
+      }
+      
+      .current {
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 40px;
+        height: 22px;
+        border-radius: 3px;
+        position: absolute;
+        background-color: rgba(white, .2);
+      }
+    }
+  }
+  
+.Container-new {
+    width: 500px;
+    border-radius: 6px;
+    position: relative;
+    background: #282B36;
+    margin: 60px auto 0 auto;
+    box-shadow: 0 10px 40px 0 rgba(40,43,54,0.30);
+    
+    nav {
+      top: 15px;
+      left: 15px;
+      position: absolute;
+      
+      a {
+        z-index: 2;
+        color: #A5AAAF;
+        font-size: 13px;
+        padding: 5px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        text-decoration: none;
+        &:hover, &.active { color: white; }
+      }
+      
+      .current {
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 40px;
+        height: 22px;
+        border-radius: 3px;
+        position: absolute;
+        background-color: rgba(white, .2);
+      }
+    }
+  }
+  
+  
+  .Container .Contents {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  
+  .Container .Content {
+    width: 100%;
+    flex-shrink: 0;
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 60px 30px 30px 30px;
+    
+    .hljs  {
+      padding: 0; 
+      font-size: 13px;
+      line-height: 24px;
+      font-family: Consolas, Monaco, monospace;
+    }
+  }
+  
+  .hljs-number { color: #FFC24C }
+  
+  .credit {
+    left: 50%;
+    bottom: 30px;
+    width: 300px;
+    position: fixed;
+    text-align: center;
+    margin-left: -150px;
+    
+    p {
+      color: #6C738B;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+    
+    p a {
+      color: #32325D;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    
+    p a:hover { color: #5C33FF; }
+  }
+
+
+
+  /* Add this to your main.css */
+
+.code-snippet {
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    
+    width: 100%;
+    border-right: 2px solid #fff; /* Blinking cursor effect */
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  

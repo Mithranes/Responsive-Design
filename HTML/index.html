@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+</head>
+
 </head>
 <body>
 
@@ -28,92 +32,143 @@
             </p>
             
         
-            <button class="button" id="doc-button" type="button">Read the <br>docs <span>></span></button>
+            <button class="button" id="doc-button" type="button">Read the <br>docs 
+                <span><i class="arrow-button"></i></span></button>
 
         </div>
 
         <div id="code-snippet">
-            <h1>TEST</h1>
+            <div class="Container">
+               
+                <div class="Contents">
+                  <div class="Content" id="one">
+                  <pre><code class="code-snippet">require "stripe"
+              Stripe.api_key = "..."
+              
+              Stripe::Charge.create(
+                :amount => 2000,
+                :currency => "eur",
+                :source => "tok_mastercard", # obtained with Stripe.js
+                :description => "Charge for hello@thomascullen.io"
+              )</code></pre>
+                </div>
+                <div class="Content" id="two">
+                  <pre class="python"><code class="code-snippet">import stripe
+              stripe.api_key = "..."
+              
+              stripe.Charge.create(
+                amount=2000,
+                currency="eur",
+                source="tok_amex", # obtained with Stripe.js
+                description="Charge for madison.wilson@example.com"
+              )</pre></code>
+                </div>
+                <div class="Content" id="three">
+                  <pre><code>var stripe = require("stripe")(
+                "..."
+              );
+              
+              stripe.charges.create({
+                amount: 2000,
+                currency: "eur",
+                source: "tok_visa", // obtained with Stripe.js
+                description: "Charge for jayden.martinez@example.com"
+              }, function(err, charge) {
+                // asynchronously called
+              });</code></pre>
+                </div>
+                <div class="Content" id="four">
+                  <pre><code>stripe.Key = "..."
+              
+              chargeParams := &stripe.ChargeParams{
+                Amount: 2000,
+                Currency: "eur",
+                Desc: "Charge for benjamin.wilson@example.com",
+              }
+              
+              // obtained with Stripe.js
+              chargeParams.SetSource("tok_mastercard")
+              ch, err := charge.New(chargeParams)</code></pre>
+                </div>
+                </div>
+              </div>
+              
+              
         </div>
     </div>
     
     
 
-
+    
     <div id="developer-footer">
-
+        <vr class="vl"></vr>
         <div class="dev-headers">
+            
             <div>
                 <img src="../assets/images/logos/Vector.png">
                 <img src="../assets/images/logos/Vector (1).png">
             </div>
-    
-            <h3 class="title">
-                Use Stripe with your stack
-            </h3>
-    
+            
+            <h3 class="title">Use Stripe with your stack</h3>
             <p>
-                We offer client and server <br>libraries in everything from <br>React and PHP to .NET and iOS.
+                We offer client and server <br>libraries in everything from 
+                <br>React and PHP to .NET and iOS.
             </p>
-
-            <button>See libraries <span> > </span></button>
+            <button>See libraries <i class="arrow"></i></button>
         </div>
-
+    
+        <vr class="vl"></vr>
         <div class="dev-headers">
+            
             <div>
                 <img src="../assets/images/logos/Vector.png">
                 <img src="../assets/images/logos/Vector (1).png">
             </div>
-    
-            <h3>
-                Use Stripe with your stack
-            </h3>
-    
+            <h3>Try no-code options</h3>
             <p>
-                We offer client and server <br>libraries in everything from <br>React and PHP to .NET and iOS.
+                Customize and deploy <br>
+                 payments interfaces directly <br>
+                 from the Stripe Dashboard.
             </p>
-
-            <button>See libraries <span> > </span></button>
+            <button>Explore no-code  <i class="arrow"></i></button>
         </div>
-
-
+    
+        <vr class="vl"></vr>
         <div class="dev-headers">
+            
             <div>
                 <img src="../assets/images/logos/Vector.png">
                 <img src="../assets/images/logos/Vector (1).png">
             </div>
-    
-            <h3>
-                Use Stripe with your stack
-            </h3>
-    
+            <h3>Explore prebuilt integrations</h3>
             <p>
-                We offer client and server <br>libraries in everything from <br>React and PHP to .NET and iOS.
+                Connect Stripe to over a <br>
+                hundred tools including Adobe, <br>Salesforce, and Xero.
             </p>
-
-            <button>See libraries <span> > </span></button>
+            <button>Browse App Marketplace  <i class="arrow"></i></button>
         </div>
 
+
+        <vr class="vl"></vr>
         <div class="dev-headers">
+            
             <div>
                 <img src="../assets/images/logos/Vector.png">
                 <img src="../assets/images/logos/Vector (1).png">
             </div>
-    
-            <h3>
-                Use Stripe with your stack
-            </h3>
-    
+        
+            <h3>Build on Stripe Apps</h3>
             <p>
-                We offer client and server <br>libraries in everything from <br>React and PHP to .NET and iOS.
+                Create an app just for your team <br>
+                or for the millions of businesses <br>
+                on Stripe.
             </p>
-
-            <button>See libraries <span> > </span></button>
+            <button>Learn about Apps  <i class="arrow"></i></button>
         </div>
-
     </div>
+    
 
 </section>
-    
+<script src="../JS/app.js"></script>
 </body>
 </html>
