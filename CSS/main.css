@@ -14,19 +14,16 @@
 
 #container {
     display: flex;
-    width: 90%;
-    
+    gap:70px;   
+    justify-content: center;
 }
 
-
-
 #developer-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
+    
+    
+    
     margin-bottom: 96px;
+    margin-top: 40px;
 }
 
 #design-developers {
@@ -54,6 +51,7 @@
     color: #0A2540;
     outline: none;
     cursor: pointer;
+    padding: 3px;
 }
 
 #code-snippet {
@@ -73,7 +71,8 @@
 .dev-headers{
     color: white;
     margin-top: 50px;
-    margin-right: 70px
+    margin-right: 70px;
+    
 };
 
 .dev-headers h3{
@@ -84,9 +83,15 @@
 .dev-headers p {
     color: #ADBDCC;
     font-size: 13.59px;
-    line-height: 24px;
-    
+    line-height: 24px;    
 }
+
+.dev-headers img {
+  margin-left: -20px; /* Negative margin to create overlap */
+  align-items: center;
+  justify-content: center;
+}
+
 
 .dev-headers button {
     background: none;
@@ -107,6 +112,7 @@
     margin-left: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
+    margin-top: 10px;
     
     
     
@@ -129,6 +135,7 @@
     padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+
   }
 
   
