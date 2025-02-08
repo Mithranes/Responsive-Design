@@ -1,0 +1,70 @@
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+}
+
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  padding: 20px;
+  color: #0A2540;
+  margin-left: 200px;
+  background-color: #ffff; /* Optional styling */
+}
+
+#title-container{
+  margin: 0px;
+}
+#titles p {
+  font-size: 14px;
+}
+
+#footer-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-list ul {
+  list-style: none;
+  margin-right: 100px;
+  margin-top: 0;
+}
+
+#footer-list ul li{
+  margin: 4px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.copyright {
+  padding: 10px 0;
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+.separator{
+  width: 1px; 
+  height: 100vh;
+  background: linear-gradient(#424770, #0000);; /* Line color */
+  border: none;
+  margin: 0;
+}
+
+.separator-list {
+  width: 1px; 
+  height: 50vh;
+  background: linear-gradient(#424770, #0000);; /* Line color */
+  border: none;
+  margin: 0;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 5px;
+  transform: rotate(-45deg);
+}
+
+
