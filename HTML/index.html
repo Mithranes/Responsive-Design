@@ -31,7 +31,6 @@
                 build what you need on one platform.
             </p>
             
-        
             <button class="button" id="doc-button" type="button">Read the <br>docs 
                 <span><i class="arrow-button"></i></span></button>
 
@@ -39,67 +38,60 @@
 
         <div id="code-snippet">
             <div class="Container">
-               
                 <div class="Contents">
                   <div class="Content" id="one">
-                  <pre><code class="code-snippet">require "stripe"
-              Stripe.api_key = "..."
-              
-              Stripe::Charge.create(
-                :amount => 2000,
-                :currency => "eur",
-                :source => "tok_mastercard", # obtained with Stripe.js
-                :description => "Charge for hello@thomascullen.io"
-              )</code></pre>
-                </div>
-                <div class="Content" id="two">
-                  <pre class="python"><code class="code-snippet">import stripe
-              stripe.api_key = "..."
-              
-              stripe.Charge.create(
-                amount=2000,
-                currency="eur",
-                source="tok_amex", # obtained with Stripe.js
-                description="Charge for madison.wilson@example.com"
-              )</pre></code>
-                </div>
-                <div class="Content" id="three">
-                  <pre><code>var stripe = require("stripe")(
-                "..."
-              );
-              
-              stripe.charges.create({
-                amount: 2000,
-                currency: "eur",
-                source: "tok_visa", // obtained with Stripe.js
-                description: "Charge for jayden.martinez@example.com"
-              }, function(err, charge) {
-                // asynchronously called
-              });</code></pre>
-                </div>
-                <div class="Content" id="four">
-                  <pre><code>stripe.Key = "..."
-              
-              chargeParams := &stripe.ChargeParams{
-                Amount: 2000,
-                Currency: "eur",
-                Desc: "Charge for benjamin.wilson@example.com",
-              }
-              
-              // obtained with Stripe.js
-              chargeParams.SetSource("tok_mastercard")
-              ch, err := charge.New(chargeParams)</code></pre>
-                </div>
-                </div>
-              </div>
-              
-              
+                  <pre><code class="code-snippet">
+  <span class="line-number">1</span> <span style="color: #8095FF;">const</span> stripe = <span style="color: #00D4FF;">require</span>(<span style="color: #FFA956;">'stripe'</span>)(<span style="color: #FFA956;">'sk_test_BQokikJOvBi2Hl4olfQ2'</span>)
+  <span class="line-number">2</span>
+  <span class="line-number">3</span> <span style="color: #8095FF;">await</span> stripe.paymentIntents.<span style="color: #00D4FF;">create</span>({ 
+  <span class="line-number">4</span>    amount: <span style="color: #FFD96A;">2000</span>, 
+  <span class="line-number">5</span>    currency: <span style="color:#FFA956;">'usd'</span>
+  <span class="line-number">6</span> });
+  
+</code></pre>
+<div class="code-nav">
+    <nav>
+        <h3>NORMAL</h3>
+        <h3>server js</h3>
+        <div class="nav-stats">
+            <p>600%</p>
+            <p>☰</p>
+            <p>6/1 ln : 4</p>
         </div>
-    </div>
-    
-    
+    </nav>
 
+</div>
+
+
+
+</div>
+
+
+</div>
+<div class="console">
+<div class="console-snippet">
+<pre><code class="console-snippet">
+    <span style="color: #8095FF;">$  </span>node server.js && stripe listen
+    <span >> Ready! Waiting for requests...</span>
     
+    <span class="line-number">2024-05-02 19:07:43</span>[<span style="color: #00D4FF;">200</span>] stripe.paymentIntents.
+    <span class="line-number">2024-05-02 19:07:43</span>[<span style="color: #00D4FF;">200</span>] charge.succeeded</span>, 
+    <span class="line-number">2024-05-02 19:07:43</span>[<span style="color: #00D4FF;">200</span>] payment_intent.succeeded</span>
+          </code></pre>
+    </div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<div>
+</div>
+</div>
+
+        
     <div id="developer-footer">
         <vr class="vl"></vr>
         <div class="dev-headers">
@@ -165,8 +157,7 @@
         </div>
     </div>
     
-
 </section>
-<script src="../JS/app.js"></script>
+
 </body>
 </html>

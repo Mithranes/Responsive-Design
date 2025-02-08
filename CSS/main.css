@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Inter';
-    src: url(../assets/fonts/Inter_18pt-Regular.ttf) 
+    src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+    font-family: 'Source-Code';
+    src: url(../assets/fonts/SourceCodePro-Regular.ttf) 
   }
   
 
@@ -10,26 +12,27 @@
     flex-direction: column;
     background-color: #0A2540;
     font-family: Inter;
+    
 }
 
 #container {
     display: flex;
     gap:70px;   
     justify-content: center;
+    
 }
 
 #developer-title-container {
-    
-    
-    
     margin-bottom: 96px;
     margin-top: 40px;
+    
 }
 
 #design-developers {
     color: #00D4FF;
     font-size: 17px;
     line-height: 27px;
+    
 }
 
 #ship-title {
@@ -58,15 +61,58 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.line-number {
+    display: inline-block;
+    margin-right: 5px;
+    color: #6C738B;
+    text-align: right;
+    margin-bottom: 5px; 
+}
+
+.code-nav {
+  display: flex;
+  background-color: #0A2540;
+  
+}
+
+.code-nav nav {
+  display: flex;
+  background-color: #0A2540;
+}
+
+.code-nav nav h3 {
+  font-size: 14px;
+  color: #8095FF;
+  cursor: pointer;          /* Make it look clickable */
+  padding: 8px 16px;        /* Space inside each tab */
+  transition: background 0.3s ease; /* Smooth hover effect */
+  border-radius: 2px;
+}
+
+.code-nav nav h3:hover {
+  color: #06182C;
+  background-color: #8095FF; /* Hover effect */
+}
+
+.nav-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #55718D;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 200px;
+  margin-top: 10px;
 }
 
 #developer-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-
 
 .dev-headers{
     color: white;
@@ -102,9 +148,6 @@
     
 }
 
-
-
-
 .vl {
     border-left: 1px solid #00D4FF;
     height: 15px;
@@ -113,9 +156,6 @@
     margin-right: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
-    
-    
-    
   }
 
   .arrow {
@@ -138,108 +178,18 @@
 
   }
 
-  
-  
   .Container {
-    width: 500px;
     border-radius: 6px;
+    width: 540px;
+    height: 249px;
     position: relative;
-    background: #282B36;
-    margin: 60px auto 0 auto;
-    box-shadow: 0 10px 40px 0 rgba(40,43,54,0.30);
-    
-    nav {
-      top: 15px;
-      left: 15px;
-      position: absolute;
-      
-      a {
-        z-index: 2;
-        color: #A5AAAF;
-        font-size: 13px;
-        padding: 5px 8px;
-        border-radius: 4px;
-        display: inline-block;
-        text-decoration: none;
-        &:hover, &.active { color: white; }
-      }
-      
-      .current {
-        top: 0;
-        left: 0;
-        z-index: 0;
-        width: 40px;
-        height: 22px;
-        border-radius: 3px;
-        position: absolute;
-        background-color: rgba(white, .2);
-      }
-    }
-  }
-  
-.Container-new {
-    width: 500px;
-    border-radius: 6px;
-    position: relative;
-    background: #282B36;
-    margin: 60px auto 0 auto;
-    box-shadow: 0 10px 40px 0 rgba(40,43,54,0.30);
-    
-    nav {
-      top: 15px;
-      left: 15px;
-      position: absolute;
-      
-      a {
-        z-index: 2;
-        color: #A5AAAF;
-        font-size: 13px;
-        padding: 5px 8px;
-        border-radius: 4px;
-        display: inline-block;
-        text-decoration: none;
-        &:hover, &.active { color: white; }
-      }
-      
-      .current {
-        top: 0;
-        left: 0;
-        z-index: 0;
-        width: 40px;
-        height: 22px;
-        border-radius: 3px;
-        position: absolute;
-        background-color: rgba(white, .2);
-      }
-    }
-  }
-  
-  
-  .Container .Contents {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    align-items: flex-start;
-  }
-  
-  .Container .Content {
-    width: 100%;
-    flex-shrink: 0;
+    background: #0C2E4E;
     color: white;
-    font-size: 15px;
-    line-height: 24px;
-    padding: 60px 30px 30px 30px;
+    margin: 60px auto 0 auto;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
     
-    .hljs  {
-      padding: 0; 
-      font-size: 13px;
-      line-height: 24px;
-      font-family: Consolas, Monaco, monospace;
-    }
   }
-  
-  .hljs-number { color: #FFC24C }
-  
+    
   .credit {
     left: 50%;
     bottom: 30px;
@@ -256,7 +206,7 @@
     }
     
     p a {
-      color: #32325D;
+      color: #0000b3;
       font-weight: 400;
       text-decoration: none;
     }
@@ -264,18 +214,31 @@
     p a:hover { color: #5C33FF; }
   }
 
-
-
-  /* Add this to your main.css */
-
 .code-snippet {
     display: inline-block;
-    font-family: "Courier New", Courier, monospace;
-    
+    font-family: Source-Code;
+    overflow: hidden;
     width: 100%;
     border-right: 2px solid #fff; /* Blinking cursor effect */
     animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
   }
+
+  .console {
+    background-color: black;
+    display: inline-block;
+    font-family: Source-Code;
+    background-color: #06182C;
+    margin-top: -27px;
+    width: 100%;
+    font-size: 14px;
+    
+  }
+
+  .console-snippet {
+    overflow: hidden;
+    border-right: 2px solid #fff; /* Blinking cursor effect */
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
   
   @keyframes typing {
     from {
