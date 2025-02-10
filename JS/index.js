@@ -122,9 +122,9 @@ const setControls = () => {
 
 const setBaseSphere = () => {
 
-  const baseSphere   = new THREE.SphereGeometry(35, 35, 35);
+  const baseSphere   = new THREE.SphereGeometry(40, 40, 40);
   const baseMaterial = new THREE.MeshStandardMaterial({
-    color:        0x0b2636, 
+    color:        0x0A2540, 
     transparent:  true, 
     opacity:      0.9
   });
@@ -152,7 +152,7 @@ const setShaderMaterial = () => {
 const setMap = () => {
 
   let   activeLatLon    = {};
-  const dotSphereRadius = 35;
+  const dotSphereRadius = 40;
 
   const readImageData = (imageData) => {
 

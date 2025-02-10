@@ -14,9 +14,9 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: #0f2027;
-  background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364);
-  background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  background: #0A2540;
+  /* background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to top, #0f2027, #203a43, #2c5364); */
   color: rgb(49, 98, 127);
   position: relative;
   overflow: hidden; /* Prevent overflow of content */
@@ -95,3 +95,13 @@
 }
 
 
+@media (max-width: 1024px) {
+  #global-statistics {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .vl {
+    display: none; /* Hide dividers on smaller screens */
+  }
+}
