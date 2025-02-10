@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/header-style.css">
+  <link rel="stylesheet" href="/CSS/intro-section-style.css">
+  <link rel="stylesheet" href="/CSS/brands.css">
+  <link rel="stylesheet" href="/CSS/dashboard-container.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="intro-section">
+    <header class="main-header">
+      <div class="nav-container">
+        <h1 class="logo">
+          <img src="/assets/images/stripes-logo.svg" alt="Stripe's Logo">
+        </h1>
+
+        <nav class="navigation-menu">
+          <ul>
+            <li>Products</li>
+            <li>Solutions</li>
+            <li>Developers</li>
+            <li>Resources</li>
+            <li>Pricing</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="">Contact sales</a>
+        <a href="">Sign in</a>
+      </div>
+
+      <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <canvas id="gradient-canvas" style="width:100vw"></canvas>
+    <div class="content-wrapper">
+      <article class="caption-content">
+        <h2>Financial infrastructure for the internet</h2>
+        <p>Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts,
+          automate financial processes, and ultimately grow revenue.</p>
+        <div class="cta-buttons">
+          <a href="">Contact sales</a>
+          <a href=""> Sign in</a>
+        </div>
+      </article>
+
+      <div class="dashboard-container">
+        <div class="mobile-phone">
+          <div class="phone-screen">
+            <form action="payment-form">
+              <div class="top-part">
+                <img src="/assets/images/abstraction-magazine.svg" alt="Abstraction Magazine"
+                  class="abstraction-magazine">
+                <h4>Abstraction Magazine</h4>
+                <p>$19 per month</p>
+                <button class="apple-pay">
+                  <img src="/assets/images/apple-pay.svg" alt="apple-pay">
+                </button>
+                <p>Or pay with card</p>
+              </div>
+
+              <div class="bottom-part">
+                <label for="email-input">Email</label>
+                <input type="text" class="email-input">
+
+                <label for="card-input">Card information</label>
+                <input type="text" placeholder="Number" class="card-numbers-input">
+                <div class="years-cvc-wrapper">
+                  <input type="text" placeholder="MM / YY">
+                  <input type="text" placeholder="CVC">
+                </div>
+
+                <label for="location-input">Country or region</label>
+                <div class="zip-input-container">
+                  <select name="" class="location-input">
+                    <option value="GEO"></option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="US" selected>United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="IN">India</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    <option value="IT">Italy</option>
+                    <option value="JP">Japan</option>
+                  </select>
+                  <input type="text" placeholder="ZIP">
+                </div>
+
+                <button class="apple-pay">
+                  <img src="/assets/images/apple-pay.svg" alt="apple-pay">
+                </button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="chart-panel">
+          <div class="company-part">
+            <h3>Rocket Rides</h3>
+          </div>
+          <div class="graphs-part">
+            <input type="text" placeholder="Search">
+
+            <div class="graphs">
+              <div class="main-graph">
+                <h3>Today</h3>
+
+                <div class="categories">
+                  <div class="net-volume-part">
+                    <p class="chart-title">Net volume</p>
+                    <p class="chart-value">$3,528,198.72</p>
+                    <p>2:00 PM</p>
+                  </div>
+
+                  <div class="time-part">
+                    <p class="chart-title">Yesterday</p>
+                    <p class="chart-value">$2,931,556.34</p>
+                  </div>
+                </div>
+
+                <img src="/assets/images/top-graph.svg" alt="">
+                <div class="times">
+                  <div class="net-volume-part">
+                    <p>2:00 PM</p>
+                  </div>
+
+                  <div class="time-part">
+                    <p>Now, 2:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-graphs">
+                <div class="graph-container">
+                  <p class="chart-title">Net volume from sales <span>+32.8%</span></p>
+                  <p class="chart-value">$39,274.29 <span>$29,573.54</span></p>
+                  <img src="/assets/images/sales-volume.svg" alt="">
+                  <div class="times">
+                    <div class="net-volume-part">
+                      <p>20 Apr</p>
+                    </div>
+
+                    <div class="time-part">
+                      <p>Today</p>
+                    </div>
+                  </div>
+                  <p>Updated today 7:50 AM</p>
+                </div>
+
+                <div class="graph-container">
+                  <p class="chart-title">New customers <span>+32.8%</span></p>
+                  <p class="chart-value">$37 <span>27</span></p>
+                  <img src="/assets/images/customures-amount.svg" alt="">
+                  <div class="times">
+                    <div class="net-volume-part">
+                      <p>20 Apr</p>
+                    </div>
+
+                    <div class="time-part">
+                      <p>Today</p>
+                    </div>
+                  </div>
+                  <p>Updated today 7:50 AM</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="companies-logos">
+      <div class="brands">
+        <img src="/assets/images/brands/amazon.svg" alt="">
+        <img src="/assets/images/brands/salesforce.svg" alt="">
+        <img src="/assets/images/brands/google.svg" alt="">
+        <img src="/assets/images/brands/urbn.svg" alt="">
+        <img src="/assets/images/brands/shopify.svg" alt="">
+        <img src="/assets/images/brands/whatsapp.svg" alt="">
+        <img src="/assets/images/brands/bmw-company.svg" alt="">
+        <img src="/assets/images/brands/marriot-company.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <script src="/JS/Gradient.js"></script>
+  <script>
+    var gradient = new Gradient()
+    gradient.initGradient('#gradient-canvas');
+  </script>
+</body>
+
+</html>
