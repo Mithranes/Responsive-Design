@@ -1,119 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/main.css">
+  <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.151.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.151.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
-    
-    <footer id="footer">
-        
-        <div id="footer-list">
+  <div class="container">
 
-            <hr class="separator">
-            <div id="title-container">
-            
-                <div id="titles">
-                    <img src="../assets/icons/stripetitle.png">
-                    <p><span class="arrow">➤ </span>United States (English)</p>
-                </div>
-    
-            </div>
+   
 
-            <hr class="separator-list">
-            <ul>
-                <li>Products & Pricing</li>
-                <li>Pricing</li>
-                <li>Atlas</li>
-                <li>Billing</li>
-                <li>Capital</li>
-                <li>Checkout</li>
-                <li>Climate</li>
-                <li>Connect</li>
-                <li>Data Pipeline</li>
-                <li>Elements</li>
-                <li>Financial Connections</li>
-                <li>Identity</li>
-                <li>Invoicing</li>
-                <li>Issuing</li>
-                <li>Link</li>
-                <li>Payments</li>
-                <li>Payment Links</li>
-                <li>Payouts</li>
-                <li>Radar</li>
-                <li>Revenue Recognition</li>
-                <li>Sigma</li>
-                <li>Tax</li>
-                <li>Terminal</li>
-                <li>Treasury</li>
-            </ul>
+    <div id="global-title-container">
 
-            <hr class="separator-list">
-            <ul>
-                <li>Solutions</li>
-                <li>Startups</li>
-                <li>Enterprises</li>
-                <li>SaaS</li>
-                <li>Platforms</li>
-                <li>Ecommerce</li>
-                <li>Marketplaces</li>
-                <li>Crypto</li>
-                <li>Creator economy</li>
-                <li>Embedded finance</li>
-                <li>Global businesses</li>
-                <li>Finance automation</li>
-                <br>
-                <li>Integrations & Custom Solutions</li>
-                <li>Stripe App Marketplace</li>
-                <li>Partner ecosystem</li>
-                <li>Professional services</li>
-                <br>
-                <li>Developers</li>
-                
-                <li>Documentation</li>
-                <li>API reference</li>
-                <li>API status</li>
-                <li>API changelog</li>
-                <li>Stripe Apps</li>
-            </ul>
+      <h3 id="global-scale">Global Scale</h3>
+      <h2 id="global-backbone">The backbone for <br> global commerce</h2>
+      <p id="global-content">
+        Stripe makes moving money as easy and<br>
+        programmable as moving data. Our teams
+        are<br> based in offices around the world, and
+        we process<br> hundreds of billions of dollars
+        each year for <br>ambitious businesses of all sizes.
+      </p>
+    </div>
+    <div id="global-statistics">
 
-            <hr class="separator-list">
-            <ul>
-                <li>Resources</li>
-                <li>Guides</li>
-                <li>Customer stories</li>
-                <li>Blog</li>
-                <li>Annual conference</li>
-                <li>Privacy & terms</li>
-                <li>Prohibited & restricted businesses</li>
-                <li>Licenses</li>
-                <li>Sitemap</li>
-                <li>Cookie settings</li>
-                <li>Your privacy choices</li>
-                <br>
-                <li>Company</li>
+      <vr class="vl"></vr>
+      <div class="global-headers">
+        <h3>250M+</h3>
+        <p>API requests per day, peaking at<br> 13,000 requests a second.</p>
+      </div>
 
-                <li>Jobs</li>
-                <li>Newsroom</li>
-                <li>Stripe Press</li>
-                <br>
-                <li>Support</li>
-                <li>Contact sales</li>
-                <li>Support center</li>
-                <li>Support plans</li>
-                <li>CA residents: +1 888 926 2289</li>
-                
-            </ul>
-            <hr class="separator-list">
+      <vr class="vl"></vr>
+      <div class="global-headers">
+        <h3>99.999%</h3>
+        <p>Historical uptime for <span style="color: #00D4FF;">Stripe<br> services.</span></p>
+      </div>
 
-            
-        </div>
+      <vr class="vl"></vr>
+      <div class="global-headers">
+        <h3>90%</h3>
+        <p>Of U.S. adults have bought from<br> businesses using Stripe.</p>
+      </div>
 
-        <p class="copyright">&copy; 2024 Stripe, Inc</p>
-    </footer>
+      <vr class="vl"></vr>
+      <div class="global-headers">
+        <h3>135+</h3>
+        <p>Currencies and payment<br> methods supported.</p>
+      </div>
+
+    </div>
+
+
+    <div class="globe-container">
+      <canvas class="canvas"></canvas>
+      <canvas class="globe-canvas"></canvas> <!-- This is where the globe will render -->
+    </div>
+    <script src="../JS/index.js" type="module"></script> 
+  </div>
+  
+
+  
 
 </body>
 </html>

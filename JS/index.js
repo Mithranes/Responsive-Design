@@ -277,7 +277,7 @@ const setMap = () => {
     
   }
 
-  image.src = './assets/images/background/world_alpha_mini.jpg';
+  image.src = '../assets/images/background/world_alpha_mini.jpg';
 
 }
 
