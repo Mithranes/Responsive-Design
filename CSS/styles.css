@@ -78,8 +78,6 @@
   color: #FFFFFF;
   font-size: 24px;
   line-height: 32px;
-  
-  
 }
 
 #global-statistics p {
@@ -97,11 +95,21 @@
 
 @media (max-width: 1024px) {
   #global-statistics {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    margin-left: 50px;
     gap: 20px;
   }
   .vl {
     display: none; /* Hide dividers on smaller screens */
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .globe-container {
+    display: none;
+    
   }
 }

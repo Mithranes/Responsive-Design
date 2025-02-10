@@ -288,8 +288,8 @@ const resize = () => {
     height: container.offsetHeight
   };
 
-  if(window.innerWidth > 700) camera.position.z = 100;
-  else camera.position.z = 20;
+  // if(window.innerWidth > 700) camera.position.z = 100;
+  // else camera.position.z = 20;
 
   camera.aspect = sizes.width / sizes.height;
   camera.updateProjectionMatrix();
