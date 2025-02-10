@@ -1,7 +1,7 @@
 /* Remove default margins and padding from html and body */
 @font-face {
   font-family: Inter;
-  src: url(./assets/fonts/Inter_18pt-Regular.ttf);
+  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
 }
 
 * {
