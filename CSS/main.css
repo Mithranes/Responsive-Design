@@ -1,9 +1,7 @@
-
 @font-face {
   font-family: Inter;
   src: url(../assets/fonts/Inter_18pt-Regular.ttf);
 }
-
 
 #footer {
   display: flex;
@@ -12,21 +10,22 @@
   padding: 50px;
   color: #0A2540;
   margin-right: 100px;
-  background-color: #ffff; /* Optional styling */
+  background-color: #ffff;
+  justify-content: center;
+  
 }
 
 #title-container{
-  margin: 0px;
   margin-right: 50px;
   margin-left: 50px;
 }
+
 #titles p {
   font-size: 14px;
 }
 
 #footer-list {
-  display: flex;
-  justify-content: center;
+  display: flex; 
 }
 
 #footer-list ul {
@@ -71,6 +70,61 @@
   display: inline-block;
   margin-right: 5px;
   transform: rotate(-45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  
+  #footer-list ul {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding: 30px;
+  }
+  #title-container {
+    text-align: center;
+    margin: 0;
+  }
+  #footer-list ul {
+    margin: 15px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #footer {
+    padding: 30px;
+  }
+  #title-container {
+    text-align: center;
+    margin: 0;
+  }
+  #footer-list ul {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 420px) {
+  #footer {
+    padding: 20px;
+  }
+  #footer-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer-list ul {
+    margin: 10px 0;
+  }
+  #titles p {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 12px;
+    margin: 0;
+  }
 }
 
 
