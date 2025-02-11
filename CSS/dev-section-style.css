@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
   font-family: Inter;
-  src: url(/Responsive-Design/assets/fonts/Inter_18pt-Regular.ttf);
+  src: url(/assets/fonts/Inter_18pt-Regular.ttf);
   font-family: Code;
-  src: url(/Responsive-Design/assets/fonts/SourceCodePro-Regular.ttf);
+  src: url(/assets/fonts/SourceCodePro-Regular.ttf);
 }
 
 #dev-section {
@@ -13,7 +14,9 @@
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     padding-top: 300px;
     padding-bottom: 300px;
-    font-family: Inter;  
+    font-family: Inter
+    
+    
 }
 
 @media (max-width: 768px) {
@@ -89,12 +92,14 @@
 .code-nav {
   display: flex;
   background-color: #0A2540;
+  font-family: Code;
   
 }
 
 .code-nav nav {
   display: flex;
   background-color: #0A2540;
+  font-family: Code;
 }
 
 .code-nav nav h3 {
@@ -244,10 +249,9 @@
 
 .code-snippet {
     display: inline-block;
-    font-family: Source-Code;
+    font-family: Code;
     overflow: hidden;
     width: 100%;
-
     animation: typing 4s steps(40) 1s infinite, blink 0.75s step-end infinite;
     
   }
@@ -255,7 +259,6 @@
   .console {
     background-color: black;
     display: inline-block;
-    font-family: Source-Code;
     background-color: #06182C;
     margin-top: -27px;
     width: 100%;
@@ -265,6 +268,7 @@
 
   .console-snippet {
     overflow: hidden;
+    
     animation: typing 4s steps(40) 1s infinite, blink 0.75s step-end infinite;  
 }
   

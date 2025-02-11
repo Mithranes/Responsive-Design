@@ -1,11 +1,14 @@
 /* Remove default margins and padding from html and body */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @font-face {
   font-family: Inter;
-  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+  src: url(/assets/fonts/Inter_18pt-Regular.ttf);
 }
 
-* {
-  font-family: Inter;
+body {
+   font-family: "Inter", serif;
 }
 
 
@@ -92,7 +95,20 @@
   color: #FFFFFF;
   font-size: 24px;
   line-height: 32px;
+  
+  
 }
+
+.global-headers h3::before {
+  content: ' ';
+  width: 2px;
+  border-left: 1px solid #00D4FF;
+  position: relative;
+  top: 0;
+  right: 20px;
+
+}
+
 
 #global-statistics p {
   color: #ADBDCC;

@@ -1,7 +1,7 @@
 .payments-wrapper{
     display: flex;
     margin-top: 250px;
-    width: clamp(300px, 60%, 810px);
+    width: clamp(300px, 80%, 1080px);
     gap: 120px;
     justify-content: space-around;
 }
