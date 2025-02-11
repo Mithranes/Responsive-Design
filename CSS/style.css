@@ -42,3 +42,59 @@ body {
     top: 0px;
     z-index: -1;
 }
+
+.Section__backgroundMask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: var(--sectionBackgroundOverflow);
+}
+
+.Section__background {
+    position: relative;
+    height: 100%;
+    max-height: var(--sectionAngleMaxHeight);
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: var(--sectionTransformOrigin);
+    transform: skewY(var(--sectionAngle));
+    background: var(--backgroundColor);
+    overflow: hidden;
+}
+
+.Guides {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 var(--columnPaddingNormal);
+    pointer-events: none;
+}
+
+.Guides__container {
+    display: grid;
+    grid: 1fr/repeat(var(--columnCountMax),1fr);
+    position: relative;
+    max-width: var(--layoutWidth);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.Guides__guide {
+    width: 1px;
+    background: linear-gradient(180deg,var(--guideDashedColor),var(--guideDashedColor) 50%,transparent 0,transparent);
+    background-size: 1px 8px;
+}
+
+.Guides__guide:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.Guides__guide:first-of-type, .Guides__guide:last-of-type {
+    background: var(--guideSolidColor);
+}

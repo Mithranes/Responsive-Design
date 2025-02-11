@@ -60,6 +60,7 @@
 
     .navigation-menu ul {
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
     }
 

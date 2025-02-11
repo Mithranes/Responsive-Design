@@ -15,7 +15,7 @@ body {
 }
 
 /* phone and payment-form styles */
-.mobile-phone {
+.dashboard-container  .mobile-phone {
     width: 270px;
     padding: 8px;
     border-radius: 36px;
@@ -26,7 +26,7 @@ body {
     z-index: 2;
 }
 
-.phone-screen form {
+.dashboard-container .phone-screen form {
     height: 100%;
     padding: 24px 16px;
     border-radius: 28px;
